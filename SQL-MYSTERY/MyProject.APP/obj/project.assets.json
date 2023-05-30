@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "MyProject.BLL.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MyProject.DAL": "1.0.0",
+          "MyProject.MODEL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyProject.BLL.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyProject.BLL.Service.dll": {}
+        }
+      },
+      "MyProject.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MyProject.MODEL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyProject.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyProject.DAL.dll": {}
+        }
+      },
+      "MyProject.MODEL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyProject.MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyProject.MODEL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyProject.BLL.Service/1.0.0": {
+      "type": "project",
+      "path": "../MyProject.BLL.Service/MyProject.BLL.Service.csproj",
+      "msbuildProject": "../MyProject.BLL.Service/MyProject.BLL.Service.csproj"
+    },
+    "MyProject.DAL/1.0.0": {
+      "type": "project",
+      "path": "../MyProject.DAL/MyProject.DAL.csproj",
+      "msbuildProject": "../MyProject.DAL/MyProject.DAL.csproj"
+    },
+    "MyProject.MODEL/1.0.0": {
+      "type": "project",
+      "path": "../MyProject.MODEL/MyProject.MODEL.csproj",
+      "msbuildProject": "../MyProject.MODEL/MyProject.MODEL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "MyProject.BLL.Service >= 1.0.0",
+      "MyProject.MODEL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\duduc\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\MyProject.APP.csproj",
+      "projectName": "MyProject.APP",
+      "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\MyProject.APP.csproj",
+      "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
+      "outputPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj": {
+              "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.BLL.Service\\MyProject.BLL.Service.csproj"
+            },
+            "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+              "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
