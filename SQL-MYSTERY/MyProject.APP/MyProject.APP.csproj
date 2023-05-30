@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyProject.BLL.Service\MyProject.BLL.Service.csproj" />
     <ProjectReference Include="..\MyProject.MODEL\MyProject.MODEL.csproj" />
   </ItemGroup>
 
