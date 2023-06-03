@@ -257,22 +257,23 @@ CREATE TABLE TB_PROGRAMACAO (
 );
 
 INSERT INTO TB_PROGRAMACAO VALUES
-    (1, 'Preparação da Noiva', 10, 1, '09:00', '12:00'),
+    (1, 'Preparação da Noiva', 10, 1, '09:00', '11:40'),
     (2, 'Preparação do Noivo', 10, 1, '12:00', '12:30'),
-    (3, 'Almoço', 3, 1, '12:30', '14:00'),
-    (4, 'Cerimônia de Casamento', 16, 1, '14:00', '15:00'),
-    (5, 'Sessão de Fotos dos Noivos', 15, 1, '15:30', '16:30'),
-    (6, 'Recepção de Casamento', 1, 1, '17:00', '18:30'),
-    (7, 'Jantar de Casamento', 3, 1, '19:00', '21:00'),
-    (8, 'Brinde de Casamento', 3, 1, '20:30', '21:00'),
-    (9, 'Primeira Dança dos Noivos', 9, 1, '21:00', '21:30'),
-    (10, 'Corte do Bolo', 9, 1, '21:30', '22:00'),
-    (11, 'Baile de Casamento', 9, 1, '22:00', '23:30'),
-    (12, 'Discurso dos Padrinhos', 9, 1, '22:30', '23:00'),
-    (13, 'Festa de Casamento', 16, 1, '23:00', '02:00'),
-    (14, 'Lançamento do Buquê', 9, 1, '23:00', '23:15'),
-    (15, 'Entrega dos Presentes', 9, 1, '00:00', '01:30'),
-    (16, 'Despedida dos Noivos', 1, 1, '02:00', '02:30');
+    (3, 'Almoço', 3, 1, '13:00', '14:00'),
+    (4, 'Cerimônia de Casamento', 16, 1, '15:00', '16:00'),
+    (5, 'Sessão de Fotos dos Noivos', 15, 1, '16:00', '16:30'),
+    (6, 'Jantar de Casamento', 3, 1, '16:30', '17:30'),
+    (7, 'Brinde de Casamento', 3, 1, '17:30', '18:00'),
+    (9, 'Corte do Bolo', 9, 1, '17:30', '18:00'),
+    (10, 'Discurso dos Padrinhos', 9, 1, '18:00', '18:30'),
+    (11, 'Primeira Dança dos Noivos', 9, 1, '18:00', '19:00'),
+    (12, 'Banda', 9, 1, '19:00', '20:00'),
+    (13, 'Baile de Casamento', 9, 1, '20:00', '21:00'),
+    (14, 'Lançamento do Buquê', 9, 1, '21:00', '21:30'),
+    (15, 'Festa de Casamento', 16, 1, '21:30', '00:00'),
+    (16, 'Entrega dos Presentes', 9, 1, '00:00', '01:30'),
+    (17, 'Despedida dos Noivos', 1, 1, '01:40', '02:30');
+
 CREATE TABLE TB_CONVITE (
 	ID_CONVITE INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     ID_EVENTO INT UNSIGNED NOT NULL,
