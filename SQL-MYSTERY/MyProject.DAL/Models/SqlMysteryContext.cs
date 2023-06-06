@@ -56,8 +56,7 @@ public partial class SqlMysteryContext : DbContext
     public virtual DbSet<TbTitulo> TbTitulos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseMySQL("Server=localhost;Database=sql_mystery;Uid=root;Pwd=Ducaduca-1;");
+=> optionsBuilder.UseMySQL("Server=ServerAdress;Database=DatabaseName;Uid=Username;Pwd=Password;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

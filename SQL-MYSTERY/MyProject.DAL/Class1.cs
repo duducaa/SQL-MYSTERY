@@ -10,7 +10,7 @@ namespace MyProject.DAL
         public DataTable TabelaGenerica(String comando) {
 
 
-            SqlConnection com = new SqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=Ducaduca-1;");
+            SqlConnection com = new SqlConnection("Server=ServerAdress;Database=DatabaseName;Uid=Username;Pwd=Password;");
             SqlCommand cmd = new SqlCommand(comando, com);
             try
             {
