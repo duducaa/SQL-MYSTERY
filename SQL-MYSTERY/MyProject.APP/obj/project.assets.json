@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\duduc\\.nuget\\packages\\": {}
+    "C:\\Users\\ccasm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\MyProject.APP.csproj",
+      "projectUniqueName": "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\MyProject.APP.csproj",
       "projectName": "MyProject.APP",
-      "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\MyProject.APP.csproj",
-      "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
-      "outputPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\obj\\",
+      "projectPath": "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\MyProject.APP.csproj",
+      "packagesPath": "C:\\Users\\ccasm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.APP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ccasm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
-              "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
+            "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+              "projectPath": "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
             }
           }
         }
@@ -87,7 +87,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
