@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace MyProject.DAL
 {
-    public class Class1 : SqlMysteryContext
+    public class UserCmdSelect : SqlMysteryContext
     {
         public DataTable TabelaGenerica(String comando) {
 
@@ -16,13 +16,16 @@ namespace MyProject.DAL
             {
                 com.Open();
                 DataTable tab = ObterTabela(cmd.ExecuteReader());
+                com.Close();
                 return tab;
             }
-            finally
+            catch(System.Exception e)
             {
-                com.Close();
+                Console.WriteLine(e.Message);
+                return null;
             }
-           
+      
+
         }
 
         public DataTable ObterTabela(DbDataReader reader)
