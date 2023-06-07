@@ -1,7 +1,7 @@
 ﻿using MyProject.DAL.Models;
 using System.Data;
 using System.Data.Common;
-using System.Data.SqlClient;
+using System.Data.MySqlClient;
 
 namespace MyProject.DAL
 {
@@ -10,8 +10,8 @@ namespace MyProject.DAL
         public DataTable TabelaGenerica(String comando) {
 
 
-            SqlConnection com = new SqlConnection("Server=ServerAdress;Database=DatabaseName;Uid=Username;Pwd=Password;");
-            SqlCommand cmd = new SqlCommand(comando, com);
+            MySqlConnection com = new MySqlConnection("Server=ServerAdress;Database=DatabaseName;Uid=Username;Pwd=Password;");
+            MySqlCommand cmd = new MySqlCommand(comando, com);
             try
             {
                 com.Open();
