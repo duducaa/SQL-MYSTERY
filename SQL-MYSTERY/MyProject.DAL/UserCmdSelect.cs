@@ -1,7 +1,7 @@
 ﻿using MyProject.DAL.Models;
 using System.Data;
 using System.Data.Common;
-using System.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 
 namespace MyProject.DAL
 {
