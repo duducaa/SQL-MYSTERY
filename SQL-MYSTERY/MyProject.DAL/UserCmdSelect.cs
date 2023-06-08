@@ -2,12 +2,13 @@
 using System.Data;
 using System.Data.Common;
 using MySql.Data.MySqlClient;
+using System.Reflection;
 
 namespace MyProject.DAL
 {
     public class UserCmdSelect : SqlMysteryContext
     {
-        public DataTable TabelaGenerica(String comando) {
+        public List<DataRow> TabelaGenerica(String comando) {
 
 
             MySqlConnection com = new MySqlConnection("Server=ServerAdress;Database=DatabaseName;Uid=Username;Pwd=Password;");
@@ -16,8 +17,9 @@ namespace MyProject.DAL
             {
                 com.Open();
                 DataTable tab = ObterTabela(cmd.ExecuteReader());
+                List<DataRow> rows = new List<DataRow>(tab.Select());
                 com.Close();
-                return tab;
+                return rows;
             }
             catch(System.Exception e)
             {
