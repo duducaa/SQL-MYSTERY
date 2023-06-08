@@ -2,13 +2,13 @@
 using System.Data;
 using System.Data.Common;
 using MySql.Data.MySqlClient;
-using System.Reflection;
+using Newtonsoft.Json;
 
 namespace MyProject.DAL
 {
     public class UserCmdSelect : SqlMysteryContext
     {
-        public List<DataRow> TabelaGenerica(String comando) {
+        public DataTable TabelaGenerica(String comando) {
 
 
             MySqlConnection com = new MySqlConnection("Server=ServerAdress;Database=DatabaseName;Uid=Username;Pwd=Password;");
@@ -17,9 +17,8 @@ namespace MyProject.DAL
             {
                 com.Open();
                 DataTable tab = ObterTabela(cmd.ExecuteReader());
-                List<DataRow> rows = new List<DataRow>(tab.Select());
                 com.Close();
-                return rows;
+                return tab; 
             }
             catch(System.Exception e)
             {
@@ -28,6 +27,20 @@ namespace MyProject.DAL
             }
       
 
+        }
+
+        public static string DataTable_JSON_JsonNet(DataTable tabela)
+        {
+            try
+            {
+                string jsonString = string.Empty;
+                jsonString = JsonConvert.SerializeObject(tabela);
+                return jsonString;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         public DataTable ObterTabela(DbDataReader reader)

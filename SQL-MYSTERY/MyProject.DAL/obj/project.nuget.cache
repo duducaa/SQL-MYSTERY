@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5jYVTx3kvWgVtHfF4lKVgwf9YMmw4LfYWy2VwWHp8//BGHTNezxPnM5q0IMaAANeDhedWi6cVkyqjTnceVC1hg==",
+  "dgSpecHash": "BXS9Ed9yKaSId3D+U2U2xTt3oHizgB+l2xEfwKnnx2MIH+xsdioYb48rY3lWqKYYeatNLf8txa6ejdtR9gqqRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,7 @@
     "C:\\Users\\ccasm\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\ccasm\\.nuget\\packages\\mysql.data\\8.0.33\\mysql.data.8.0.33.nupkg.sha512",
     "C:\\Users\\ccasm\\.nuget\\packages\\mysql.entityframeworkcore\\7.0.2\\mysql.entityframeworkcore.7.0.2.nupkg.sha512",
+    "C:\\Users\\ccasm\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\ccasm\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\ccasm\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\ccasm\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
