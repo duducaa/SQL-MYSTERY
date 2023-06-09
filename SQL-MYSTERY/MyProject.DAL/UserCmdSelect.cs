@@ -29,19 +29,7 @@ namespace MyProject.DAL
 
         }
 
-        public static string DataTable_JSON_JsonNet(DataTable tabela)
-        {
-            try
-            {
-                string jsonString = string.Empty;
-                jsonString = JsonConvert.SerializeObject(tabela);
-                return jsonString;
-            }
-            catch
-            {
-                throw;
-            }
-        }
+       
 
         public DataTable ObterTabela(DbDataReader reader)
         {
