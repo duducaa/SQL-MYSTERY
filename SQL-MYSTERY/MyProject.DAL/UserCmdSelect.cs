@@ -11,7 +11,7 @@ namespace MyProject.DAL
         public DataTable TabelaGenerica(String comando) {
 
 
-            MySqlConnection com = new MySqlConnection("Server=ServerAdress;Database=DatabaseName;Uid=Username;Pwd=Password;");
+            MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
             MySqlCommand cmd = new MySqlCommand(comando, com);
             try
             {

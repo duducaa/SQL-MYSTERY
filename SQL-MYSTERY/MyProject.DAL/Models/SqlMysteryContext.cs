@@ -57,7 +57,7 @@ public partial class SqlMysteryContext : DbContext
     public virtual DbSet<TbTitulo> TbTitulos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-=> optionsBuilder.UseMySQL("Server=ServerAdress;Database=DatabaseName;Uid=Username;Pwd=Password;");
+=> optionsBuilder.UseMySQL("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
