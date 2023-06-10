@@ -7,7 +7,7 @@ public partial class TbSolucao
 {
     public uint IdSolucao { get; set; }
 
-    public string NomeAssassino { get; set; } = null!;
+    public uint IdCulpado { get; set; }
 
-    public string EspecieAssassino { get; set; } = null!;
+    public virtual TbPersonagem IdCulpadoNavigation { get; set; } = null!;
 }

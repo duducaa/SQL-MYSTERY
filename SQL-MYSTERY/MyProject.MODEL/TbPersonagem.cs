@@ -46,4 +46,6 @@ public partial class TbPersonagem
     public virtual ICollection<TbFichaCriminal> TbFichaCriminals { get; set; } = new List<TbFichaCriminal>();
 
     public virtual TbMorfologium? TbMorfologium { get; set; }
+
+    public virtual TbSolucao? TbSolucao { get; set; }
 }

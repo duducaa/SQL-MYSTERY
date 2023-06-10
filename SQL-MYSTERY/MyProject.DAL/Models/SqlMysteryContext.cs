@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using MyProject.MODEL;
 
 namespace MyProject.DAL.Models;
 
@@ -56,8 +55,7 @@ public partial class SqlMysteryContext : DbContext
 
     public virtual DbSet<TbTitulo> TbTitulos { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-=> optionsBuilder.UseMySQL("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseMySQL("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -441,13 +439,15 @@ public partial class SqlMysteryContext : DbContext
 
             entity.ToTable("tb_solucao");
 
-            entity.HasIndex(e => e.EspecieAssassino, "ESPECIE_ASSASSINO").IsUnique();
-
-            entity.HasIndex(e => e.NomeAssassino, "NOME_ASSASSINO").IsUnique();
+            entity.HasIndex(e => e.IdCulpado, "ID_CULPADO").IsUnique();
 
             entity.Property(e => e.IdSolucao).HasColumnName("ID_SOLUCAO");
-            entity.Property(e => e.EspecieAssassino).HasColumnName("ESPECIE_ASSASSINO");
-            entity.Property(e => e.NomeAssassino).HasColumnName("NOME_ASSASSINO");
+            entity.Property(e => e.IdCulpado).HasColumnName("ID_CULPADO");
+
+            entity.HasOne(d => d.IdCulpadoNavigation).WithOne(p => p.TbSolucao)
+                .HasForeignKey<TbSolucao>(d => d.IdCulpado)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("tb_solucao_ibfk_1");
         });
 
         modelBuilder.Entity<TbTitulo>(entity =>
