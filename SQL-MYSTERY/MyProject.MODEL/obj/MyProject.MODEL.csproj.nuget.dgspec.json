@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {}
+    "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+    "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
+        "projectUniqueName": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
         "projectName": "MyProject.MODEL",
-        "projectPath": "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
-        "packagesPath": "C:\\Users\\ccasm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ccasm\\OneDrive\\Área de Trabalho\\git clone\\sqlmistery\\SQL-MYSTERY\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\obj\\",
+        "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
+        "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
+        "outputPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ccasm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
