@@ -25,5 +25,23 @@ namespace MyProject.BLL.Service.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+
+        [HttpPost("InsertQuery")]
+        public ActionResult<Dictionary<string, int>> InsertQuery([FromBody] string query)
+        {
+            try
+            {
+                UserCmdInsert user = new UserCmdInsert();
+                user.InsertCulpado(query);
+
+                Dictionary<string, int> response = new Dictionary<string, int>();
+                response.Add("response", 1);
+                return Ok(JsonConvert.SerializeObject(response));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }
