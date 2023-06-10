@@ -3171,19 +3171,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maced\\.nuget\\packages\\": {}
+    "C:\\Users\\duduc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maced\\Desktop\\SQL-MYSTERY-development\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
+      "projectUniqueName": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
       "projectName": "MyProject.DAL",
-      "projectPath": "C:\\Users\\maced\\Desktop\\SQL-MYSTERY-development\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
-      "packagesPath": "C:\\Users\\maced\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maced\\Desktop\\SQL-MYSTERY-development\\SQL-MYSTERY\\MyProject.DAL\\obj\\",
+      "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
+      "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
+      "outputPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maced\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3197,8 +3197,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\maced\\Desktop\\SQL-MYSTERY-development\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
-              "projectPath": "C:\\Users\\maced\\Desktop\\SQL-MYSTERY-development\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
+            "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+              "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
             }
           }
         }
