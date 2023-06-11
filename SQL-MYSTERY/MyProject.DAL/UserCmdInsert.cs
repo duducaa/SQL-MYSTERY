@@ -7,7 +7,7 @@ namespace MyProject.DAL
 {
     public class UserCmdInsert : SqlMysteryContext
     {
-        public int InsertCulpado(String comando)
+        public String InsertCulpado(String comando)
         {
 
 
@@ -17,16 +17,30 @@ namespace MyProject.DAL
                 int i;
                 MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
                 MySqlCommand cmd = new MySqlCommand(comando, com);
+                i = 0;
                 com.Open();
-               i= cmd.ExecuteNonQuery();
+                i= cmd.ExecuteNonQuery();
                 com.Close();
-                return i;
-          
+                if (i==1)
+                {
+                    return "insert ocorreu tranquilamente";
+                }
+                else
+                {
+                    return "insert nao ocorreu verifique se esta inserindo na tabela certa";
+
+                }
+
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+                return ex.Message;
             }
             catch (System.Exception e)
             {
                 Console.WriteLine(e.Message);
-                return -2;
+                return e.Message;
             }
 
 
