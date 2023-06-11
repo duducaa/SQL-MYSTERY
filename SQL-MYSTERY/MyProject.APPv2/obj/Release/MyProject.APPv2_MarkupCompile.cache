@@ -2,19 +2,19 @@
 
 
 winexe
-VB
-.vb
-C:\Users\maced\Desktop\SQL-MYSTERY-development\SQL-MYSTERY\MyProject.APPv2\obj\Release\
+C#
+.cs
+C:\Users\maced\Documents\Repositório\SQL-MYSTERY\SQL-MYSTERY\MyProject.APPv2\obj\Release\
 MyProject.APPv2
 none
-false
+true
+TRACE
+C:\Users\maced\Documents\Repositório\SQL-MYSTERY\SQL-MYSTERY\MyProject.APPv2\App.xaml
+1833362016
 
-C:\Users\maced\Desktop\SQL-MYSTERY-development\SQL-MYSTERY\MyProject.APPv2\Application.xaml
-1219584333
-
-6-506864109
-111190997905
-MainWindow.xaml;
+5-683788970
+13-1310406943
+Page1.xaml;
 
 True
 
