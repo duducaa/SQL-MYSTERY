@@ -7,23 +7,26 @@ namespace MyProject.DAL
 {
     public class UserCmdInsert : SqlMysteryContext
     {
-        public void InsertCulpado(String comando)
+        public int InsertCulpado(String comando)
         {
 
 
-            MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
-            MySqlCommand cmd = new MySqlCommand(comando, com);
+           
             try
             {
+                int i;
+                MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
+                MySqlCommand cmd = new MySqlCommand(comando, com);
                 com.Open();
-                cmd.ExecuteNonQuery();
+               i= cmd.ExecuteNonQuery();
                 com.Close();
+                return i;
           
             }
             catch (System.Exception e)
             {
                 Console.WriteLine(e.Message);
-               
+                return -2;
             }
 
 
