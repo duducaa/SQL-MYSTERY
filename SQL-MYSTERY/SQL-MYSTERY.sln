@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.DAL", "MyProject.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.MODEL", "MyProject.MODEL\MyProject.MODEL.csproj", "{5F28A792-1C35-4662-B5BC-6E01084DF88C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProject.BLL.Service", "MyProject.BLL.Service\MyProject.BLL.Service.csproj", "{293169B5-2BC4-4D81-9A8F-8159DAE51394}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.BLL.Service", "MyProject.BLL.Service\MyProject.BLL.Service.csproj", "{293169B5-2BC4-4D81-9A8F-8159DAE51394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyProject.APPv2", "MyProject.APPv2\MyProject.APPv2.csproj", "{260F38D9-7E31-403E-81A7-8478C6B0FE43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{293169B5-2BC4-4D81-9A8F-8159DAE51394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{293169B5-2BC4-4D81-9A8F-8159DAE51394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{293169B5-2BC4-4D81-9A8F-8159DAE51394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260F38D9-7E31-403E-81A7-8478C6B0FE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260F38D9-7E31-403E-81A7-8478C6B0FE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260F38D9-7E31-403E-81A7-8478C6B0FE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260F38D9-7E31-403E-81A7-8478C6B0FE43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
