@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {}
+    "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {}
   },
   "projects": {
-    "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {
+    "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
         "projectName": "MyProject.DAL",
-        "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
-        "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
-        "outputPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\obj\\",
+        "projectPath": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\MyProject.DAL.csproj",
+        "packagesPath": "C:\\Users\\icaro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\icaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
-                "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
+              "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+                "projectPath": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj"
               }
             }
           }
@@ -87,21 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+    "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
+        "projectUniqueName": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
         "projectName": "MyProject.MODEL",
-        "projectPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
-        "packagesPath": "C:\\Users\\duduc\\.nuget\\packages\\",
-        "outputPath": "D:\\programação\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\obj\\",
+        "projectPath": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
+        "packagesPath": "C:\\Users\\icaro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\duduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\icaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
