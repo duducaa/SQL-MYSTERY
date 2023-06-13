@@ -35,7 +35,8 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
     ```
     
 
-    - Após finalizar a instalação, monte o banco de dados rodando o script `SQL-MYSTERY-DDL` para montar o banco de dados;
+    - Ao finalizar a instalação, certifique que as configurações do SGBD sejam assim: Server=localhost, Database=sql_mystery, Uid=root; Pwd=1234;
+    - Após finalizar a configuração, monte o banco de dados rodando o script `SQL-MYSTERY-DDL` para montar o banco de dados;
     - Em seguida rode o `SQL-MYSTERY-DML` para inserir os dados no banco de dados.
    
 2. **Framework.NET**: Utilize o `Visual Studio` para baixar as extensões necessarias
@@ -51,22 +52,15 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
     git clone https://github.com/duducaa/SQL-MYSTERY.git
     ```
     
-4. **Conecte o banco de dados**: Conecte o MySQL com no Visual Studio. Para isso, siga os passos abaixo:
-    1. No Visual Studio, selecione a aba "View" e localize o campo "Server Explorer". Você também pode fazer isso utilizando o atalho `CTRL+ALT+S`.
-    2. Clique com o botão direito em "Data Connections" e selecione a opção "Add Connections".
-    3. Em "Data Source", selecione "MySQL Database". Se essa opção não aparecer, certifique-se de que você está com a versão mais recente do Visual Studio e do .Net.
-    4. Informe os seguintes parâmetros:
-       - Server Name: `localhost`
-       - User Name: `root`
-       - Password: (o password é o mesmo criado na instalação do MySQL)
-       - Database name: (o nome do seu banco de dados)
+4. **Conecte o banco de dados**: Conecte o MySQL com no Visual Studio. Para isso, siga os passos abaixo
+    - Rode o projeto no `Visual Studio`, ele irá conectar automaticamente se as configurações do SGBD estiverem corretas.
 
 
-5. **Rodar o Projeto em HTML**:  Clicke duas vezes no arquivo HTML para rodar o projeto. Com isso você já pode investigar quem é o culpado.
-
+5. **Rodar o Front-end**: Rodar o front end para começar a jogar.
+   - Vá até a pasta `FRONT-END` loocalizada no repositório e clicke duas vezes no arquivo `index` para rodar o projeto. 
 
 Nosso objetivo com este projeto é tornar o aprendizado divertido e emocionante. Esperamos que você goste de jogar este jogo tanto quanto gostamos de criá-lo! 🎉🎈
 
 
 ## Observação:bangbang:
-O projeto ainda está em desenvolvimento, ou seja, tem algumas coisas que não estão completas como o roteiro de investigação e front-end. E devido ao tamanho da complexibilidade do projeto, não temos uma estimativa exata de quando tudo estará finalizado, mas no momento já é possivel validar as Query do projeto.
+O projeto ainda está em desenvolvimento, ou seja, o roteiro de investigação ainda está incompleto. Mas no momento já é possivel validar as Query do projeto.
