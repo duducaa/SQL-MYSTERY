@@ -57,8 +57,12 @@ function handleResponse(json, input) {
         return false;
     }
 
-    if(json.includes(`"Code":"1062"`) || json.includes("venceu")) {
+    if(json.includes(`"Code":"1062"`) && input.includes("tb_solucao")) {
         alert("Você Encontrou o Culpado, Prabéns!");
+        return false;
+    }
+    else if(json.includes(`"Code":"1062"`)) {
+        document.querySelector(".error").innerHTML = JSON.parse(json)["Message"];
         return false;
     }
 
