@@ -42,7 +42,7 @@ function query() {
         console.log(json)
         document.querySelector(".data-table").innerHTML = ""
         document.querySelector(".error").innerHTML = ""
-        if(handleResponse(json)) {
+        if(handleResponse(json, input)) {
             dynamicTable(document.querySelector(".data-table"), JSON.parse(json));
         }
     })
@@ -51,7 +51,7 @@ function query() {
     })
 }
 
-function handleResponse(json) {
+function handleResponse(json, input) {
     if(json.includes(`"Code":"1064"`)) {
         document.querySelector(".error").innerHTML = JSON.parse(json)["Message"];
         return false;
@@ -67,7 +67,11 @@ function handleResponse(json) {
         return false;
     }
 
-    return true;
+    if(input.toUpperCase().includes("SELECT")) {
+        return true;
+    }
+
+    return false;
 }
 
 
