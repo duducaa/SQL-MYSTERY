@@ -1,0 +1,118 @@
+:root {
+    --cinza_escuro: rgb(78, 78, 78);
+    --marrom: rgb(136, 83, 4);
+}
+
+div {
+    border-radius: 15px;
+}
+
+body {
+    background-image: url("blob:https://web.whatsapp.com/8567abd1-35ef-41c9-bb5c-14f492fbba34");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 70%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.divs {
+    height: 100%;
+}
+
+.data-table {
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 10px solid #8b4513;
+    background-color: #ffffe0;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 15px;
+}
+
+.div2 {
+    display: flex;
+    height: 50%;
+}
+
+.list-table {
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: var(--marrom);
+    width: 40%;
+    height: 100%;
+    margin-right: 15px;
+    overflow-y: scroll;
+    text-transform: uppercase;
+}
+
+.list-table {
+    
+}
+
+table {
+    text-align: center;
+    width: 100%;
+}
+
+.list-head {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.query-area {
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: var(--cinza_escuro);
+    width: 100%;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.error {
+    background-color: #d2691e;
+    width: 100%;
+    height: 100%;
+}
+
+.query {
+    border-radius: 15px 0 0 15px;
+    width: 85%;
+    background-color: var(--cinza_escuro);
+    color: white;
+}
+
+.send {
+    width: 15%;
+    border-radius: 0 15px 15px 0;
+}
+
+.list-table::-webkit-scrollbar {
+    width: 12px;              /* width of the entire scrollbar */
+}
+
+.list-table::-webkit-scrollbar-track {
+    background: #8b4513;        /* color of the tracking area */
+}
+
+.list-table::-webkit-scrollbar-thumb {
+    background-color: gray;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #8b4513;  /* creates padding around scroll thumb */
+}
