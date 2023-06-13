@@ -25,25 +25,27 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
 
 ## Como Rodar o Projeto
 
-1. **Banco de dados**: Baixe e instale o SGBD `MySQL` no computador seguindo o link abaixo
+1. **Banco de dados**: Baixe e instale o SGBD `MySQL` no computador seguindo o link abaixo:
 
     ```
     https://dev.mysql.com/downloads/installer/
     ```
     
-2. **Framework.NET**: Utilize o `Visual Studio` para baixar as extensões necessarias
-
+    - Após finalizar a instalação, monte o banco de dados rodando o script `SQL-MYSTERY-DDL` para montar o banco de dados;
+    - Em seguida rode o `SQL-MYSTERY-DML` para inserir os dados no banco de dados.
+   
+2. **Framework.NET**: Utilize o `Visual Studio` para baixar as extensões necessarias:
 
     ```
     https://visualstudio.microsoft.com/pt-br/downloads/
     ```
-    
+
 3. **Clone o repositório**: Para clonar o repositório, você precisa ter o `git` instalado em seu computador. Abra o terminal e execute o seguinte comando:
 
     ```
     git clone https://github.com/duducaa/SQL-MYSTERY.git
     ```
-    
+     
 4. **Conecte o banco de dados**: Conecte o MySQL com no Visual Studio. Para isso, siga os passos abaixo:
     1. No Visual Studio, selecione a aba "View" e localize o campo "Server Explorer". Você também pode fazer isso utilizando o atalho `CTRL+ALT+S`.
     2. Clique com o botão direito em "Data Connections" e selecione a opção "Add Connections".
@@ -53,6 +55,7 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
        - User Name: `root`
        - Password: (o password é o mesmo criado na instalação do MySQL)
        - Database name: (o nome do seu banco de dados)
+
 5. Após informar os parâmetros, selecione a opção "OK". Agora, você estabeleceu uma conexão entre o Visual Studio e o MySQL, e pode começar a manipular as informações do banco de dados diretamente da IDE.
 
 Nosso objetivo com este projeto é tornar o aprendizado divertido e emocionante. Esperamos que você goste de jogar este jogo tanto quanto gostamos de criá-lo! 🎉🎈
