@@ -56,3 +56,7 @@ Quando você faz uma pergunta, ela passa por todas essas partes na seguinte orde
 5. Após informar os parâmetros, selecione a opção "OK". Agora, você estabeleceu uma conexão entre o Visual Studio e o MySQL, e pode começar a manipular as informações do banco de dados diretamente da IDE.
 
 Nosso objetivo com este projeto é tornar o aprendizado divertido e emocionante. Esperamos que você goste de jogar este jogo tanto quanto gostamos de criá-lo! 🎉🎈
+
+
+## Observação:bangbang:
+O projeto ainda está em desenvolvimento, ou seja, tem algumas coisas que não estão completas como o roteiro de investigação e front-end. E devido ao tamanho da complexibilidade do projeto, não temos uma estimativa exata de quando tudo estará finalizado, mas no momento já é possivel validar as Query do projeto.
