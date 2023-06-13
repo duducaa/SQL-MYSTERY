@@ -8,7 +8,7 @@ div {
 }
 
 body {
-    background-image: url("blob:https://web.whatsapp.com/8567abd1-35ef-41c9-bb5c-14f492fbba34");
+    background-image: url("./img/bd3.jpeg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     font-family: sans-serif;
@@ -89,6 +89,7 @@ table {
     background-color: #d2691e;
     width: 100%;
     height: 100%;
+    padding: 10px;
 }
 
 .query {

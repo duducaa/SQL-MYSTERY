@@ -41,12 +41,33 @@ function query() {
     .then((json) => {
         console.log(json)
         document.querySelector(".data-table").innerHTML = ""
-        dynamicTable(document.querySelector(".data-table"), JSON.parse(json))
+        document.querySelector(".error").innerHTML = ""
+        if(handleResponse(json)) {
+            dynamicTable(document.querySelector(".data-table"), JSON.parse(json));
+        }
+    })
+    .catch((ev) => {
+        document.querySelector(".error").innerHTML = ev;
     })
 }
 
-function handleError() {
-    
+function handleResponse(json) {
+    if(json.includes(`"Code":"1064"`)) {
+        document.querySelector(".error").innerHTML = JSON.parse(json)["Message"];
+        return false;
+    }
+
+    if(json.includes(`"Code":"1062"`) || json.includes("venceu")) {
+        alert("Você Encontrou o Culpado, Prabéns!");
+        return false;
+    }
+
+    if(json.includes(`"code:"`)) {
+        document.querySelector(".error").innerHTML = JSON.parse(json)["Message"]
+        return false;
+    }
+
+    return true;
 }
 
 
