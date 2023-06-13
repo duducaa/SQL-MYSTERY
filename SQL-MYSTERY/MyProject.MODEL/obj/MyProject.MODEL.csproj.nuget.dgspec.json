@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {}
+    "C:\\Users\\johnv\\OneDrive\\Documentos\\GitHub\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
+    "C:\\Users\\johnv\\OneDrive\\Documentos\\GitHub\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
+        "projectUniqueName": "C:\\Users\\johnv\\OneDrive\\Documentos\\GitHub\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
         "projectName": "MyProject.MODEL",
-        "projectPath": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
-        "packagesPath": "C:\\Users\\icaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\icaro\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\obj\\",
+        "projectPath": "C:\\Users\\johnv\\OneDrive\\Documentos\\GitHub\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\MyProject.MODEL.csproj",
+        "packagesPath": "C:\\Users\\johnv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\johnv\\OneDrive\\Documentos\\GitHub\\SQL-MYSTERY\\SQL-MYSTERY\\MyProject.MODEL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\icaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\johnv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
