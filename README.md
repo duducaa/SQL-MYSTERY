@@ -1,4 +1,4 @@
-# O Enigma SQL para Crianças 🕵️‍♀️🔍
+# O Enigma SQL 🕵️‍♀️🔍
 
 ## 📝 Descrição
 
