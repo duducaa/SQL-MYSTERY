@@ -32,10 +32,19 @@ namespace MyProject.BLL.Service.Controllers
             try
             {
                 UserCmdInsert user = new UserCmdInsert();
-                user.InsertCulpado(query);
+                Dictionary<string, string> response = user.InsertCulpado(query);
 
-                Dictionary<string, int> response = new Dictionary<string, int>();
-                response.Add("response", 1);
+                string code;
+                if (response.TryGetValue("Code", out code))
+                {
+                    int intCode = Convert.ToInt32(response["Code"]);
+                    if (intCode == 1062 && query.Trim().Split(" ")[2].ToUpper() == "TB_SOLUCAO")
+                    {
+                        response.Clear();
+                        response.Add("Message", "Você venceu");
+                    }
+                }
+
                 return Ok(JsonConvert.SerializeObject(response));
             }
             catch (Exception ex)

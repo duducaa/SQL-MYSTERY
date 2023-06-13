@@ -7,43 +7,34 @@ namespace MyProject.DAL
 {
     public class UserCmdInsert : SqlMysteryContext
     {
-        public String InsertCulpado(String comando)
-        {
+        public Dictionary<string, string> InsertCulpado(String comando)
+        {           
+            Dictionary<string, string> response = new Dictionary<string, string>();
 
+            MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
+            MySqlCommand cmd = new MySqlCommand(comando, com);
 
-           
             try
             {
-                int i;
-                MySqlConnection com = new MySqlConnection("Server=localhost;Database=sql_mystery;Uid=root;Pwd=1234;");
-                MySqlCommand cmd = new MySqlCommand(comando, com);
-                i = 0;
                 com.Open();
-                i= cmd.ExecuteNonQuery();
+                int i = cmd.ExecuteNonQuery();
                 com.Close();
-                if (i==1)
-                {
-                    return "insert ocorreu tranquilamente";
-                }
-                else
-                {
-                    return "insert nao ocorreu verifique se esta inserindo na tabela certa";
-
-                }
-
+                response.Add("Type", "No Error");
+                return response;
             }
             catch (MySqlException ex)
             {
-                Console.WriteLine(ex.Message);
-                return ex.Message;
+                response.Add("Type", "MYSQL");
+                response.Add("Code", ex.Number.ToString());
+                response.Add("Message", ex.Message);
+                return response;
             }
-            catch (System.Exception e)
+            catch (System.Exception ex)
             {
-                Console.WriteLine(e.Message);
-                return e.Message;
+                response.Add("Type", "C#");
+                response.Add("Error", ex.Message);
+                return response;
             }
-
-
         }
     }
 }
