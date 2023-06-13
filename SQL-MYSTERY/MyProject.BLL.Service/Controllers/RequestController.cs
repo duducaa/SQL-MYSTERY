@@ -27,7 +27,7 @@ namespace MyProject.BLL.Service.Controllers
         }
 
         [HttpPost("InsertQuery")]
-        public ActionResult<Dictionary<string, int>> InsertQuery([FromBody] string query)
+        public ActionResult<Dictionary<string, string>> InsertQuery([FromBody] string query)
         {
             try
             {
@@ -41,7 +41,8 @@ namespace MyProject.BLL.Service.Controllers
                     if (intCode == 1062 && query.Trim().Split(" ")[2].ToUpper() == "TB_SOLUCAO")
                     {
                         response.Clear();
-                        response.Add("Message", "Você venceu");
+                        response.Add("Message", "Vitória");
+                        response.Add("Code", intCode.ToString());
                     }
                 }
 
