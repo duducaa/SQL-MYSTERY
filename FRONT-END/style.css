@@ -24,6 +24,7 @@ body {
     padding: 20px;
 }
 
+
 .divs {
     height: 100%;
 }
@@ -38,6 +39,42 @@ body {
     margin-bottom: 15px;
     overflow-y: scroll;
 }
+
+
+#project_comments {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%; 
+    height: 100%;
+    padding: 10px;
+    background-color: #e38745;
+
+    /* Para centralizar o conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    /* Transladar a div para trás para que esteja realmente centralizada */
+    transform: translate(-50%, -50%);
+}
+
+
+
+#show_comments_button {
+    position: relative;
+    font-size: 35px;
+    top: 110px;
+    left: 80px;
+    background-color: #8b4513;
+    width: 10%; 
+    height: 10vh;
+    color: white;
+}
+
+
 
 .div2 {
     display: flex;
@@ -138,3 +175,4 @@ table {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid #8b4513;  /* creates padding around scroll thumb */
 }
+
