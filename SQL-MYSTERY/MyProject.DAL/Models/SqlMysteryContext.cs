@@ -64,7 +64,7 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdAfiliacao).HasName("PRIMARY");
 
-            entity.ToTable("tb_afiliacao");
+            entity.ToTable("afiliacao");
 
             entity.Property(e => e.IdAfiliacao).HasColumnName("ID_AFILIACAO");
             entity.Property(e => e.Afiliacao)
@@ -76,7 +76,7 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdCofre).HasName("PRIMARY");
 
-            entity.ToTable("tb_cofre");
+            entity.ToTable("cofre");
 
             entity.Property(e => e.IdCofre).HasColumnName("ID_COFRE");
             entity.Property(e => e.Pista)
@@ -89,7 +89,7 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdContrato).HasName("PRIMARY");
 
-            entity.ToTable("tb_contrato");
+            entity.ToTable("contrato");
 
             entity.HasIndex(e => e.IdEvento, "ID_EVENTO");
 
@@ -105,24 +105,24 @@ public partial class SqlMysteryContext : DbContext
             entity.HasOne(d => d.IdEventoNavigation).WithMany(p => p.TbContratos)
                 .HasForeignKey(d => d.IdEvento)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_contrato_ibfk_1");
+                .HasConstraintName("contrato_ibfk_1");
 
             entity.HasOne(d => d.IdFuncaoNavigation).WithMany(p => p.TbContratos)
                 .HasForeignKey(d => d.IdFuncao)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_contrato_ibfk_3");
+                .HasConstraintName("contrato_ibfk_3");
 
             entity.HasOne(d => d.IdPersonagemNavigation).WithMany(p => p.TbContratos)
                 .HasForeignKey(d => d.IdPersonagem)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_contrato_ibfk_2");
+                .HasConstraintName("contrato_ibfk_2");
         });
 
         modelBuilder.Entity<TbConvite>(entity =>
         {
             entity.HasKey(e => e.IdConvite).HasName("PRIMARY");
 
-            entity.ToTable("tb_convite");
+            entity.ToTable("convite");
 
             entity.HasIndex(e => e.IdEvento, "ID_EVENTO");
 
@@ -136,19 +136,19 @@ public partial class SqlMysteryContext : DbContext
             entity.HasOne(d => d.IdEventoNavigation).WithMany(p => p.TbConvites)
                 .HasForeignKey(d => d.IdEvento)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_convite_ibfk_1");
+                .HasConstraintName("convite_ibfk_1");
 
             entity.HasOne(d => d.IdPersonagemNavigation).WithMany(p => p.TbConvites)
                 .HasForeignKey(d => d.IdPersonagem)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_convite_ibfk_2");
+                .HasConstraintName("convite_ibfk_2");
         });
 
         modelBuilder.Entity<TbDepoimento>(entity =>
         {
             entity.HasKey(e => e.IdDepoimento).HasName("PRIMARY");
 
-            entity.ToTable("tb_depoimento");
+            entity.ToTable("depoimento");
 
             entity.HasIndex(e => e.IdPersonagem, "ID_PERSONAGEM_TESTEMUNHAS_FK");
 
@@ -168,7 +168,7 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdDica).HasName("PRIMARY");
 
-            entity.ToTable("tb_dica");
+            entity.ToTable("dica");
 
             entity.Property(e => e.IdDica).HasColumnName("ID_DICA");
             entity.Property(e => e.Dica)
@@ -180,31 +180,31 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdEspecie).HasName("PRIMARY");
 
-            entity.ToTable("tb_especie");
+            entity.ToTable("especie");
 
             entity.Property(e => e.IdEspecie).HasColumnName("ID_ESPECIE");
             entity.Property(e => e.NomeEspecie)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_ESPECIE");
+                .HasColumnName("ESPECIE");
         });
 
         modelBuilder.Entity<TbEvento>(entity =>
         {
             entity.HasKey(e => e.IdEvento).HasName("PRIMARY");
 
-            entity.ToTable("tb_evento");
+            entity.ToTable("evento");
 
             entity.Property(e => e.IdEvento).HasColumnName("ID_EVENTO");
             entity.Property(e => e.NomeEvento)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_EVENTO");
+                .HasColumnName("EVENTO");
         });
 
         modelBuilder.Entity<TbFichaCriminal>(entity =>
         {
             entity.HasKey(e => e.IdCrime).HasName("PRIMARY");
 
-            entity.ToTable("tb_ficha_criminal");
+            entity.ToTable("ficha_criminal");
 
             entity.HasIndex(e => e.IdPersonagem, "ID_PERSONAGEM_CRIME_FK");
 
@@ -233,19 +233,19 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdFuncao).HasName("PRIMARY");
 
-            entity.ToTable("tb_funcao");
+            entity.ToTable("funcao");
 
             entity.Property(e => e.IdFuncao).HasColumnName("ID_FUNCAO");
             entity.Property(e => e.NomeFuncao)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_FUNCAO");
+                .HasColumnName("FUNCAO");
         });
 
         modelBuilder.Entity<TbItem>(entity =>
         {
             entity.HasKey(e => e.IdItem).HasName("PRIMARY");
 
-            entity.ToTable("tb_item");
+            entity.ToTable("item");
 
             entity.HasIndex(e => e.IdSala, "ID_SALA_ITENS_FK");
 
@@ -253,7 +253,7 @@ public partial class SqlMysteryContext : DbContext
             entity.Property(e => e.IdSala).HasColumnName("ID_SALA");
             entity.Property(e => e.NomeItem)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_ITEM");
+                .HasColumnName("ITEM");
 
             entity.HasOne(d => d.IdSalaNavigation).WithMany(p => p.TbItems)
                 .HasForeignKey(d => d.IdSala)
@@ -265,7 +265,7 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdMagia).HasName("PRIMARY");
 
-            entity.ToTable("tb_magia");
+            entity.ToTable("magia");
 
             entity.Property(e => e.IdMagia).HasColumnName("ID_MAGIA");
             entity.Property(e => e.TipoMagia)
@@ -277,7 +277,7 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdAparencia).HasName("PRIMARY");
 
-            entity.ToTable("tb_morfologia");
+            entity.ToTable("morfologia");
 
             entity.HasIndex(e => e.IdPersonagem, "ID_PERSONAGEM").IsUnique();
 
@@ -301,19 +301,19 @@ public partial class SqlMysteryContext : DbContext
         {
             entity.HasKey(e => e.IdPerfil).HasName("PRIMARY");
 
-            entity.ToTable("tb_perfil");
+            entity.ToTable("perfil");
 
             entity.Property(e => e.IdPerfil).HasColumnName("ID_PERFIL");
             entity.Property(e => e.NomePerfil)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_PERFIL");
+                .HasColumnName("PERFIL");
         });
 
         modelBuilder.Entity<TbPersonagem>(entity =>
         {
             entity.HasKey(e => e.IdPersonagem).HasName("PRIMARY");
 
-            entity.ToTable("tb_personagem");
+            entity.ToTable("personagem");
 
             entity.HasIndex(e => e.Caf, "CAF").IsUnique();
 
@@ -342,44 +342,44 @@ public partial class SqlMysteryContext : DbContext
             entity.Property(e => e.IdTitulo).HasColumnName("ID_TITULO");
             entity.Property(e => e.NomePersonagem)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_PERSONAGEM");
+                .HasColumnName("PERSONAGEM");
 
             entity.HasOne(d => d.IdAfiliacaoNavigation).WithMany(p => p.TbPersonagems)
                 .HasForeignKey(d => d.IdAfiliacao)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_personagem_ibfk_6");
+                .HasConstraintName("personagem_ibfk_6");
 
             entity.HasOne(d => d.IdEspecieNavigation).WithMany(p => p.TbPersonagems)
                 .HasForeignKey(d => d.IdEspecie)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_personagem_ibfk_2");
+                .HasConstraintName("personagem_ibfk_2");
 
             entity.HasOne(d => d.IdMagiaNavigation).WithMany(p => p.TbPersonagems)
                 .HasForeignKey(d => d.IdMagia)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_personagem_ibfk_3");
+                .HasConstraintName("personagem_ibfk_3");
 
             entity.HasOne(d => d.IdPerfilNavigation).WithMany(p => p.TbPersonagems)
                 .HasForeignKey(d => d.IdPerfil)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_personagem_ibfk_1");
+                .HasConstraintName("personagem_ibfk_1");
 
             entity.HasOne(d => d.IdRegiaoNavigation).WithMany(p => p.TbPersonagems)
                 .HasForeignKey(d => d.IdRegiao)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_personagem_ibfk_5");
+                .HasConstraintName("personagem_ibfk_5");
 
             entity.HasOne(d => d.IdTituloNavigation).WithMany(p => p.TbPersonagems)
                 .HasForeignKey(d => d.IdTitulo)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_personagem_ibfk_4");
+                .HasConstraintName("personagem_ibfk_4");
         });
 
         modelBuilder.Entity<TbProgramacao>(entity =>
         {
             entity.HasKey(e => e.IdProgramacao).HasName("PRIMARY");
 
-            entity.ToTable("tb_programacao");
+            entity.ToTable("programacao");
 
             entity.HasIndex(e => e.IdEvento, "ID_EVENTO");
 
@@ -396,49 +396,49 @@ public partial class SqlMysteryContext : DbContext
             entity.Property(e => e.IdSala).HasColumnName("ID_SALA");
             entity.Property(e => e.NomeProgramacao)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_PROGRAMACAO");
+                .HasColumnName("PROGRAMACAO");
 
             entity.HasOne(d => d.IdEventoNavigation).WithMany(p => p.TbProgramacaos)
                 .HasForeignKey(d => d.IdEvento)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_programacao_ibfk_2");
+                .HasConstraintName("programacao_ibfk_2");
 
             entity.HasOne(d => d.IdSalaNavigation).WithMany(p => p.TbProgramacaos)
                 .HasForeignKey(d => d.IdSala)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_programacao_ibfk_1");
+                .HasConstraintName("programacao_ibfk_1");
         });
 
         modelBuilder.Entity<TbRegiao>(entity =>
         {
             entity.HasKey(e => e.IdRegiao).HasName("PRIMARY");
 
-            entity.ToTable("tb_regiao");
+            entity.ToTable("regiao");
 
             entity.Property(e => e.IdRegiao).HasColumnName("ID_REGIAO");
             entity.Property(e => e.NomeRegiao)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_REGIAO");
+                .HasColumnName("REGIAO");
         });
 
         modelBuilder.Entity<TbSala>(entity =>
         {
             entity.HasKey(e => e.IdSala).HasName("PRIMARY");
 
-            entity.ToTable("tb_sala");
+            entity.ToTable("sala");
 
             entity.Property(e => e.IdSala).HasColumnName("ID_SALA");
             entity.Property(e => e.Capacidade).HasColumnName("CAPACIDADE");
             entity.Property(e => e.NomeSala)
                 .HasMaxLength(255)
-                .HasColumnName("NOME_SALA");
+                .HasColumnName("SALA");
         });
 
         modelBuilder.Entity<TbSolucao>(entity =>
         {
             entity.HasKey(e => e.IdSolucao).HasName("PRIMARY");
 
-            entity.ToTable("tb_solucao");
+            entity.ToTable("solucao");
 
             entity.HasIndex(e => e.IdCulpado, "ID_CULPADO").IsUnique();
 
@@ -448,14 +448,14 @@ public partial class SqlMysteryContext : DbContext
             entity.HasOne(d => d.IdCulpadoNavigation).WithOne(p => p.TbSolucao)
                 .HasForeignKey<TbSolucao>(d => d.IdCulpado)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("tb_solucao_ibfk_1");
+                .HasConstraintName("solucao_ibfk_1");
         });
 
         modelBuilder.Entity<TbTitulo>(entity =>
         {
             entity.HasKey(e => e.IdTitulo).HasName("PRIMARY");
 
-            entity.ToTable("tb_titulo");
+            entity.ToTable("titulo");
 
             entity.Property(e => e.IdTitulo).HasColumnName("ID_TITULO");
             entity.Property(e => e.TipoTitulo)

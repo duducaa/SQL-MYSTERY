@@ -1,0 +1,5 @@
+/home/rodrigo/Documentos/GitHub/SQL-MYSTERY/obj/Debug/net7.0/SQL-MYSTERY.csproj.AssemblyReference.cache
+/home/rodrigo/Documentos/GitHub/SQL-MYSTERY/obj/Debug/net7.0/SQL-MYSTERY.GeneratedMSBuildEditorConfig.editorconfig
+/home/rodrigo/Documentos/GitHub/SQL-MYSTERY/obj/Debug/net7.0/SQL-MYSTERY.AssemblyInfoInputs.cache
+/home/rodrigo/Documentos/GitHub/SQL-MYSTERY/obj/Debug/net7.0/SQL-MYSTERY.AssemblyInfo.cs
+/home/rodrigo/Documentos/GitHub/SQL-MYSTERY/obj/Debug/net7.0/SQL-MYSTERY.csproj.CoreCompileInputs.cache

@@ -3,7 +3,7 @@ function setup() {
 
     fetch(url, {
         method: "POST",
-        body: JSON.stringify("SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_NAME LIKE 'tb_%'"),
+        body: JSON.stringify("SELECT TABLE_NAME FROM information_schema.tables WHERE TABLE_NAME LIKE '%'"),
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json"
@@ -56,7 +56,7 @@ function handleResponse(json, input) {
         return false;
     }
 
-    if(json.includes(`"Code":"1062"`) && input.includes("tb_solucao")) {
+    if(json.includes(`"Code":"1062"`) && input.includes("solucao")) {
         alert("Você Encontrou o Culpado, Prabéns!");
         return false;
     }

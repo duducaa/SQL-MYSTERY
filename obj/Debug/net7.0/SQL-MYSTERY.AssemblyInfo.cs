@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("MyProject.MODEL")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("SQL-MYSTERY")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("MyProject.MODEL")]
-[assembly: System.Reflection.AssemblyTitleAttribute("MyProject.MODEL")]
+[assembly: System.Reflection.AssemblyProductAttribute("SQL-MYSTERY")]
+[assembly: System.Reflection.AssemblyTitleAttribute("SQL-MYSTERY")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

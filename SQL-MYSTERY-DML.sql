@@ -1,11 +1,11 @@
 #INSERT DOS TIPOS DE PERFIS DA FESTA
-INSERT INTO TB_PERFIL VALUES 
+INSERT INTO PERFIL VALUES 
 	(1, 'CONVIDADO'),
 	(2, 'FUNCIONÁRIO'),
 	(3, 'DETETIVE');
   
 #INSERT DAS ESPECIES DO REINO
-INSERT INTO TB_ESPECIE VALUES
+INSERT INTO ESPECIE VALUES
     (1, 'Onça-pintada'),
     (2, 'Arara-azul'),
     (3, 'Tamanduá-bandeira'),
@@ -41,7 +41,7 @@ INSERT INTO TB_ESPECIE VALUES
     (33, 'Pirarucu');
     
 #INSERT DE MAGIAS
-INSERT INTO TB_MAGIA VALUES
+INSERT INTO MAGIA VALUES
 	(1, 'AR'),
     (2, 'ÁGUA'),
     (3, 'TERRA'),
@@ -55,7 +55,7 @@ INSERT INTO TB_MAGIA VALUES
     (11, 'TEMPO');
     
 #INSERT DOS TITULOS DE NOBRESA 
-INSERT INTO TB_TITULO VALUES
+INSERT INTO TITULO VALUES
 	(1, 'BARÃO'),
     (2, 'VISCONDE'),
     (3, 'FAMÍLIA REAL'),
@@ -65,7 +65,7 @@ INSERT INTO TB_TITULO VALUES
     (7, 'BARONETE'),
     (8, 'CAVALEIRO');
     
-INSERT INTO TB_REGIAO VALUES
+INSERT INTO REGIAO VALUES
 	(1, 'Norte'),
     (2, 'Sul'),
     (3, 'Leste'),
@@ -73,7 +73,7 @@ INSERT INTO TB_REGIAO VALUES
     (5, 'Centro');
 
 #INSERT DOS NOMES DAS SALAS
-INSERT INTO TB_SALA VALUES
+INSERT INTO SALA VALUES
     (1, 'Hall de Entrada', 20),
     (2, 'Sala de Estar', 25),
     (3, 'Sala de Jantar', 18),
@@ -92,7 +92,7 @@ INSERT INTO TB_SALA VALUES
     (16, 'Capela', 50);
 
 #INSERT DOS ITENS DAS SALAS
-INSERT INTO TB_ITEM VALUES
+INSERT INTO ITEM VALUES
     (1, 'Tapetes Voadores', 1),
     (2, 'Espelho do Esquecimento', 1),
     (3, 'Lâmpada da Ilusão', 1),
@@ -143,11 +143,11 @@ INSERT INTO TB_ITEM VALUES
     (48, 'Órgão das Almas Perdidas', 16);
 
 #INSERT DO CASAMENTO NA TABELA CASAMENTO
-INSERT INTO TB_EVENTO VALUES
+INSERT INTO EVENTO VALUES
 	(1, 'CASAMENTO');
 
 #INSERT DA PROGRAMAÇÃO DO CASAMENTO
-INSERT INTO TB_PROGRAMACAO VALUES
+INSERT INTO PROGRAMACAO VALUES
     (1, 'Preparação da Noiva', 10, 1, '09:00', '11:40'),
     (2, 'Preparação do Noivo', 10, 1, '12:00', '12:30'),
     (3, 'Almoço', 3, 1, '13:00', '14:00'),
@@ -165,7 +165,7 @@ INSERT INTO TB_PROGRAMACAO VALUES
     (16, 'Entrega dos Presentes', 9, 1, '00:00', '01:30'),
     (17, 'Despedida dos Noivos', 1, 1, '01:40', '02:30');
 
-INSERT INTO TB_FUNCAO VALUES
+INSERT INTO FUNCAO VALUES
 	(1, 'Mordomo'),
 	(2, 'Cerimonialista'),
 	(3, 'Segurança'),

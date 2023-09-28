@@ -38,7 +38,7 @@ namespace MyProject.BLL.Service.Controllers
                 if (response.TryGetValue("Code", out code))
                 {
                     int intCode = Convert.ToInt32(response["Code"]);
-                    if (intCode == 1062 && query.Trim().Split(" ")[2].ToUpper() == "TB_SOLUCAO")
+                    if (intCode == 1062 && query.Trim().Split(" ")[2].ToUpper() == "SOLUCAO")
                     {
                         response.Clear();
                         response.Add("Message", "Vitória");
